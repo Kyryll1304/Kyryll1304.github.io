@@ -408,11 +408,13 @@ html {
   }
   #tov .tovText ul {
     margin: 0 auto;
+    text-align: left;
     width: 90%;
     margin-top: 15vh;
     list-style-image: url(../img/Group\ 198.svg);
   }
   #tov .tovText li {
+    text-align: left;
     width: 60vw;
     margin: 0 auto;
   }
