@@ -210,6 +210,9 @@ html {
     background-size: cover;
     padding: 5% 10%;
   }
+  #contacts span {
+    color: #1c521e;
+  }
   #contacts p {
     font-size: 1.5rem;
     margin-top: 2%;
@@ -404,6 +407,8 @@ html {
     font-size: 1rem;
   }
   #tov .tovText ul {
+    margin: 0 auto;
+    width: 90%;
     margin-top: 15vh;
     list-style-image: url(../img/Group\ 198.svg);
   }
@@ -437,21 +442,21 @@ html {
   }
   #whiteManMobile .derat {
     border-radius: 2vw;
-    padding: 2% 5%;
+    padding: 1% 2%;
     background-color: rgba(92, 130, 93, 0.5);
     margin: 20% 0;
     width: 100%;
   }
   #whiteManMobile .desinf {
     border-radius: 2vw;
-    padding: 2% 5%;
+    padding: 1% 2%;
     background-color: rgba(92, 130, 93, 0.5);
     margin: 20% 0;
     width: 100%;
   }
   #whiteManMobile .desinc {
     border-radius: 2vw;
-    padding: 2% 5%;
+    padding: 1% 2%;
     background-color: rgba(92, 130, 93, 0.5);
     margin: 20% 0;
     width: 100%;
@@ -478,7 +483,7 @@ html {
   #whiteManMobile .whiteText button a {
     color: white;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 }
 @media screen and (max-width: 700px) {
@@ -513,7 +518,7 @@ html {
     background-image: url(../img/bgThree.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 15% 10%;
+    padding: 15% 5%;
   }
   #contactsMobile .wrapper {
     display: flex;
@@ -545,11 +550,17 @@ html {
   }
   #contactsMobile img {
     margin: 5% 0;
-    width: 80%;
+    width: 100%;
+  }
+  #contactsMobile span {
+    color: #1c521e;
   }
   #contactsMobile .filiali {
     text-align: left;
     margin-top: 15%;
+  }
+  #contactsMobile .filiali p {
+    font-size: 0.75rem;
   }
 }
 
