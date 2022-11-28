@@ -409,13 +409,14 @@ html {
   #tov .tovText ul {
     margin: 0 auto;
     text-align: left;
-    width: 90%;
+    width: 100%;
     margin-top: 15vh;
     list-style-image: url(../img/Group\ 198.svg);
   }
   #tov .tovText li {
+    font-size: 1.25rem;
     text-align: left;
-    width: 60vw;
+    width: 100%;
     margin: 0 auto;
   }
 }
