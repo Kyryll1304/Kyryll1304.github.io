@@ -109,7 +109,7 @@ html {
     list-style-image: url(../img/Group\ 198.svg);
   }
   #whiteMan {
-    background-image: url(../img/whiteMan.png);
+    background-image: url(../img/whiteManTwo.png);
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -124,41 +124,49 @@ html {
     color: white;
   }
   #whiteMan p {
+    font-size: 1.2rem;
     margin-top: 2%;
   }
+  #whiteMan h2 {
+    text-align: left;
+    font-size: 2rem;
+  }
   #whiteMan .derat {
-    padding: 2% 5%;
+    text-align: left;
+    padding: 1%;
     background-color: rgba(92, 130, 93, 0.5);
     margin: 5% 0;
-    margin-left: 50vw;
+    margin-left: 40vw;
     width: 30vw;
   }
   #whiteMan .desinf {
-    padding: 2% 5%;
-    background-color: rgba(92, 130, 93, 0.5);
-    margin: 5% 0;
-    margin-left: 60vw;
-    width: 30vw;
-  }
-  #whiteMan .desinc {
-    padding: 2% 5%;
+    text-align: left;
+    padding: 1%;
     background-color: rgba(92, 130, 93, 0.5);
     margin: 5% 0;
     margin-left: 55vw;
     width: 30vw;
   }
-  #whiteMan .whiteText {
+  #whiteMan .desinc {
+    text-align: left;
+    padding: 1%;
+    background-color: rgba(92, 130, 93, 0.5);
+    margin: 5% 0;
+    margin-left: 45vw;
     width: 30vw;
+  }
+  #whiteMan .whiteText {
+    width: 50vw;
     text-align: right;
-    margin-left: 60vw;
+    margin-left: 45vw;
   }
   #whiteMan .whiteText h1 {
     color: white;
   }
   #whiteMan .whiteText button {
-    padding: 0.5vw 3vw;
+    padding: 0 3vw;
     margin: 1vw 0;
-    border-radius: 20px;
+    border-radius: 30px;
     background-color: #1c521e;
     border: 0;
     transition: 0.4s ease-in-out;
@@ -166,7 +174,7 @@ html {
   #whiteMan .whiteText button a {
     color: white;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   #haccp {
     text-align: center;
@@ -198,7 +206,11 @@ html {
     color: #1c521e;
   }
   #contacts .mail {
+    transition: 0.4s ease-in-out;
     color: black;
+  }
+  #contacts .mail:hover {
+    color: #1c521e;
   }
   #contacts .wrapper {
     display: flex;
@@ -212,6 +224,7 @@ html {
     width: 80%;
   }
 }
+/*-------MOBILE VERSION-------*/
 @media screen and (max-width: 700px) {
   .bottom-nav {
     display: none;
@@ -332,6 +345,7 @@ html {
 }
 @media screen and (max-width: 700px) {
   #intro {
+    height: 100vh;
     background-image: url(../img/main.png);
     background-repeat: no-repeat;
     -webkit-background-size: cover;
@@ -379,7 +393,7 @@ html {
 }
 @media screen and (max-width: 700px) {
   #whiteMan {
-    background-image: url(../img/whiteMan.png);
+    background-image: url(../img/whiteManTwo.png);
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -469,6 +483,9 @@ html {
   }
   #contacts .mail {
     color: black;
+  }
+  #contacts .mail:hover {
+    color: #1c521e;
   }
   #contacts .contacts {
     width: 100%;
