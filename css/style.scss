@@ -414,15 +414,16 @@ html {
       h1 {
         line-height: 1.75rem;
         margin-top: 15vh;
-        font-size: 14px;
+        font-size: 1.25rem;
         letter-spacing: 6%;
       }
       h2 {
         text-align: center;
         margin-top: 15vh;
-        font-size: 12px;
+        font-size: 1.25rem;
       }
       ul {
+        list-style-position: inside;
         margin: 0 auto;
         text-align: left;
         width: 100%;
@@ -430,7 +431,7 @@ html {
         list-style-image: url(../img/Group\ 198.svg);
       }
       li {
-        font-size: 10px;
+        font-size: 1rem;
         text-align: left;
         width: 100%;
         margin: 0 auto;
@@ -567,7 +568,7 @@ html {
       width: 100%;
     }
     img {
-      margin: 5% 0;
+      margin: 5% auto;
       width: 100%;
     }
     span {
