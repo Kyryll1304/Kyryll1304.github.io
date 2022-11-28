@@ -15,6 +15,8 @@ html {
   font-family: "Noto sans", sans-serif;
   font-size: 15px;
 }
+/*-------DESKTOP VERSION------------*/
+
 @media screen and (min-width: 700px) {
   .top-nav {
     display: none;
@@ -109,6 +111,9 @@ html {
       }
     }
   }
+  #whiteManMobile {
+    display: none;
+  }
   #whiteMan {
     background-image: url(../img/whiteManTwo.png);
     background-repeat: no-repeat;
@@ -171,6 +176,9 @@ html {
         background-color: #1c521e;
         border: 0;
         transition: 0.4s ease-in-out;
+        button:hover {
+          background-color: black;
+        }
 
         a {
           color: white;
@@ -179,6 +187,9 @@ html {
         }
       }
     }
+  }
+  #haccpMobile {
+    display: none;
   }
   #haccp {
     text-align: center;
@@ -193,6 +204,9 @@ html {
       font-size: 1.5rem;
       margin-top: 5%;
     }
+  }
+  #contactsMobile {
+    display: none;
   }
   #contacts {
     text-align: center;
@@ -243,7 +257,7 @@ html {
     background-color: #00baf0;
     background: white;
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: black;
+    color: rgb(17, 21, 28);
     height: 50px;
     padding: 1em;
     a {
@@ -283,7 +297,7 @@ html {
   .menu-button::before,
   .menu-button::after {
     display: block;
-    background-color: black;
+    background-color: #1c521e;
     position: absolute;
     height: 4px;
     width: 30px;
@@ -363,22 +377,21 @@ html {
     height: 100vh;
     background-image: url(../img/main.png);
     background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
-    background-position: center;
-    padding: 15% 10%;
+    background-attachment: fixed;
+    background-position: 53% 70%;
+    padding: 30% 15%;
     text-align: center;
     h1 {
-      font-size: 1.5rem;
+      font-size: 2rem;
       margin: 0 auto;
       color: white;
     }
     p {
-      margin-top: 5%;
-      font-size: 1rem;
+      margin-top: 15%;
+      font-size: 1.5rem;
       color: white;
+      font-weight: 500;
     }
   }
   #tov {
@@ -395,66 +408,83 @@ html {
     }
     .tovText {
       h1 {
-        font-size: 1.5rem;
+        line-height: 1.75rem;
+        margin-top: 15vh;
+        font-size: 1rem;
+        letter-spacing: 6%;
       }
       h2 {
-        margin-top: 5%;
+        text-align: center;
+        margin-top: 15vh;
         font-size: 1rem;
       }
       ul {
-        margin-top: 10%;
+        margin-top: 15vh;
         list-style-image: url(../img/Group\ 198.svg);
       }
     }
   }
   #whiteMan {
+    display: none;
+  }
+  #whiteManMobile {
     background-image: url(../img/whiteManTwo.png);
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-attachment: fixed;
     background-position: center;
     padding: 10%;
     text-align: center;
     h2,
     p {
+      text-align: left;
       color: white;
+      font-size: 1rem;
     }
-    p {
-      margin-top: 2%;
+    h2 {
+      text-align: left;
     }
     .derat {
+      border-radius: 2vw;
       padding: 2% 5%;
       background-color: rgba(92, 130, 93, 0.5);
-      margin: 5% 0;
+      margin: 20% 0;
 
       width: 100%;
     }
     .desinf {
+      border-radius: 2vw;
       padding: 2% 5%;
       background-color: rgba(92, 130, 93, 0.5);
-      margin: 5% 0;
+      margin: 20% 0;
 
       width: 100%;
     }
     .desinc {
+      border-radius: 2vw;
       padding: 2% 5%;
       background-color: rgba(92, 130, 93, 0.5);
-      margin: 5% 0;
+      margin: 20% 0;
 
       width: 100%;
     }
     .whiteText {
       width: 100%;
       text-align: center;
+      text-align: right;
 
       h1 {
+        text-align: right;
+        font-size: 1rem;
         color: white;
       }
       button {
         padding: 0.5vw 3vw;
-        margin: 1vw 0;
+        margin: 2vw 0;
+        margin-bottom: 5vw;
         border-radius: 20px;
         background-color: #1c521e;
         border: 0;
@@ -469,11 +499,14 @@ html {
     }
   }
   #haccp {
+    display: none;
+  }
+  #haccpMobile {
     text-align: center;
     background-image: url(../img/bgTwo.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 5% 15%;
+    padding: 10% 15%;
     h1 {
       font-size: 1.5rem;
     }
@@ -483,13 +516,27 @@ html {
     }
   }
   #contacts {
+    display: none;
+  }
+  #contactsMobile {
     text-align: center;
     background-image: url(../img/bgThree.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 5% 10%;
+    padding: 15% 10%;
+    .wrapper {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 10%;
+    }
+    h1 {
+      font-size: 1rem;
+    }
+    h2 {
+      font-size: 0.75rem;
+    }
     p {
-      font-size: 1.5rem;
+      font-size: 1rem;
       margin-top: 2%;
     }
     a {
@@ -509,6 +556,10 @@ html {
     img {
       margin: 5% 0;
       width: 80%;
+    }
+    .filiali {
+      text-align: left;
+      margin-top: 15%;
     }
   }
 }
