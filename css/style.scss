@@ -219,7 +219,9 @@ html {
     }
     p {
       font-size: 1.5rem;
-      margin-top: 2%;
+    }
+    h2 {
+      margin-bottom: 5%;
     }
     a {
       text-decoration: none;
@@ -239,9 +241,74 @@ html {
     .contacts {
       width: 33.3%;
     }
+  }
+  form {
+    border: 1px solid #1c521e;
+    padding: 2%;
+    background-color: #fff;
+    width: 40vw;
+    text-align: center;
+    h1 {
+      font-size: 1.5rem;
+    }
+    input {
+      margin-top: 1%;
+      width: 100%;
+      height: 3vh;
+      border-top: 0 white;
+      border-right: 0 white;
+      border-left: 0 white;
+      border-bottom: 1px solid #1c521e;
+    }
+    textarea {
+      margin-top: 1%;
+      height: 4vh;
+      border-top: 0 white;
+      border-right: 0 white;
+      border-left: 0 white;
+      border-bottom: 1px solid #1c521e;
+      width: 100%;
+      resize: none;
+    }
+    button {
+      margin-top: 1.5%;
+      width: 12vw;
+      height: 3vw;
+      border-radius: 2vw;
+      background-color: #fff;
+      border: 1px solid #1c521e;
+      color: #1c521e;
+      margin-left: 25vw;
+    }
+  }
+
+  .form {
+    margin: 0 auto;
+    height: fit-content;
+    width: 50%;
+    box-shadow: 11vw 3.5vw 0px -2vw #1c521e;
+  }
+
+  .linksForms {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5% 10%;
+    width: 100%;
+  }
+
+  .links {
+    margin: 0 auto;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    a {
+      margin-top: 70%;
+      margin-right: 5%;
+    }
     img {
-      margin: 5% 0;
-      width: 80%;
+      width: 100%;
     }
   }
 }
@@ -324,7 +391,7 @@ html {
   }
 
   #menu-toggle:checked + .menu-button-container .menu-button {
-    background: rgba(234, 223, 223, 0);
+    background: #0e1115;
   }
 
   #menu-toggle:checked + .menu-button-container .menu-button::after {
@@ -548,6 +615,7 @@ html {
     }
     h2 {
       font-size: 0.75rem;
+      margin-bottom: 10%;
     }
     p {
       font-size: 1rem;
@@ -577,9 +645,67 @@ html {
     .filiali {
       text-align: left;
       margin-top: 15%;
+      margin-bottom: 10%;
       p {
         font-size: 0.75rem;
       }
+    }
+  }
+  form {
+    border: 1px solid #1c521e;
+    padding: 2%;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+    h1 {
+      font-size: 1.5rem;
+    }
+    input {
+      margin-top: 1%;
+      width: 100%;
+      height: 3vh;
+      border-top: 0 white;
+      border-right: 0 white;
+      border-left: 0 white;
+      border-bottom: 1px solid #1c521e;
+    }
+    textarea {
+      margin-top: 1%;
+      height: 4vh;
+      border-top: 0 white;
+      border-right: 0 white;
+      border-left: 0 white;
+      border-bottom: 1px solid #1c521e;
+      width: 100%;
+      resize: none;
+    }
+    button {
+      margin-top: 1.5%;
+      width: 30vw;
+      height: 10vw;
+      border-radius: 20vw;
+      background-color: #fff;
+      border: 1px solid #1c521e;
+      color: #1c521e;
+      margin-left: 35vw;
+    }
+  }
+
+  .form {
+    margin: 0 auto;
+    height: fit-content;
+    width: 100%;
+    box-shadow: 3.5vw 3.5vw 0px -2vw #1c521e;
+  }
+  .links {
+    margin: 0 auto;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    a {
+      margin-right: 5%;
+      margin-top: 10%;
     }
   }
 }

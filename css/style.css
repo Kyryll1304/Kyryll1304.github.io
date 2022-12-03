@@ -215,7 +215,9 @@ html {
   }
   #contacts p {
     font-size: 1.5rem;
-    margin-top: 2%;
+  }
+  #contacts h2 {
+    margin-bottom: 5%;
   }
   #contacts a {
     text-decoration: none;
@@ -235,9 +237,71 @@ html {
   #contacts .contacts {
     width: 33.3%;
   }
-  #contacts img {
-    margin: 5% 0;
-    width: 80%;
+  form {
+    border: 1px solid #1c521e;
+    padding: 2%;
+    background-color: #fff;
+    width: 40vw;
+    text-align: center;
+  }
+  form h1 {
+    font-size: 1.5rem;
+  }
+  form input {
+    margin-top: 1%;
+    width: 100%;
+    height: 3vh;
+    border-top: 0 white;
+    border-right: 0 white;
+    border-left: 0 white;
+    border-bottom: 1px solid #1c521e;
+  }
+  form textarea {
+    margin-top: 1%;
+    height: 4vh;
+    border-top: 0 white;
+    border-right: 0 white;
+    border-left: 0 white;
+    border-bottom: 1px solid #1c521e;
+    width: 100%;
+    resize: none;
+  }
+  form button {
+    margin-top: 1.5%;
+    width: 12vw;
+    height: 3vw;
+    border-radius: 2vw;
+    background-color: #fff;
+    border: 1px solid #1c521e;
+    color: #1c521e;
+    margin-left: 25vw;
+  }
+  .form {
+    margin: 0 auto;
+    height: fit-content;
+    width: 50%;
+    box-shadow: 11vw 3.5vw 0px -2vw #1c521e;
+  }
+  .linksForms {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5% 10%;
+    width: 100%;
+  }
+  .links {
+    margin: 0 auto;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+  }
+  .links a {
+    margin-top: 70%;
+    margin-right: 5%;
+  }
+  .links img {
+    width: 100%;
   }
 }
 /*-------MOBILE VERSION-------*/
@@ -308,7 +372,7 @@ html {
     transform: rotate(405deg);
   }
   #menu-toggle:checked + .menu-button-container .menu-button {
-    background: rgba(234, 223, 223, 0);
+    background: #0e1115;
   }
   #menu-toggle:checked + .menu-button-container .menu-button::after {
     margin-top: 0px;
@@ -538,6 +602,7 @@ html {
   }
   #contactsMobile h2 {
     font-size: 0.75rem;
+    margin-bottom: 10%;
   }
   #contactsMobile p {
     font-size: 1rem;
@@ -566,9 +631,72 @@ html {
   #contactsMobile .filiali {
     text-align: left;
     margin-top: 15%;
+    margin-bottom: 10%;
   }
   #contactsMobile .filiali p {
     font-size: 0.75rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  form {
+    border: 1px solid #1c521e;
+    padding: 2%;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+  }
+  form h1 {
+    font-size: 1.5rem;
+  }
+  form input {
+    margin-top: 1%;
+    width: 100%;
+    height: 3vh;
+    border-top: 0 white;
+    border-right: 0 white;
+    border-left: 0 white;
+    border-bottom: 1px solid #1c521e;
+  }
+  form textarea {
+    margin-top: 1%;
+    height: 4vh;
+    border-top: 0 white;
+    border-right: 0 white;
+    border-left: 0 white;
+    border-bottom: 1px solid #1c521e;
+    width: 100%;
+    resize: none;
+  }
+  form button {
+    margin-top: 1.5%;
+    width: 30vw;
+    height: 10vw;
+    border-radius: 20vw;
+    background-color: #fff;
+    border: 1px solid #1c521e;
+    color: #1c521e;
+    margin-left: 35vw;
+  }
+}
+@media screen and (max-width: 700px) {
+  .form {
+    margin: 0 auto;
+    height: fit-content;
+    width: 100%;
+    box-shadow: 3.5vw 3.5vw 0px -2vw #1c521e;
+  }
+}
+@media screen and (max-width: 700px) {
+  .links {
+    margin: 0 auto;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+  }
+  .links a {
+    margin-right: 5%;
+    margin-top: 10%;
   }
 }
 
